@@ -1,0 +1,38 @@
+.main {
+  &__wrapper {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+  &__img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.main-scroll {
+  overflow: auto;
+  width: 100%;
+  .main {
+    &__wrapper {
+      // width: 1200px;
+      position: relative;
+    }
+    &__img {
+      img {
+        width: auto;
+      }
+    }
+  }
+  .svg-map {
+    width: auto;
+  }
+}
